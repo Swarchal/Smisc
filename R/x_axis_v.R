@@ -1,5 +1,5 @@
 #' Vertical x-axis labels
 #'
-#' Theme for ggplot to rotate x-axis labels and pad them
+#' Theme for ggplot to rotate and pad x-axis labels
 
 xlab_rotate <- function() theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.25))
