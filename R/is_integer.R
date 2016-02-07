@@ -14,7 +14,6 @@ is_integer <- function(x){
         } else return(FALSE)
     }
   
-    if (length(x) > 1){
-        mapply(is_integer, x)
-    }
+    if (length(x) > 1) mapply(is_integer, x)
+
 }
