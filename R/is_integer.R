@@ -7,14 +7,14 @@
 #' @export
 
 is_integer <- function(x){
+
+    if(length(x) == 1){
+        if (x %% 1 == 0){
+            return(TRUE)
+        } else return(FALSE)
+    }
   
-  if(length(x) == 1){
-  if (x %% 1 == 0){
-    return(TRUE)
-  } else return(FALSE)
-  }
-  
-  if (length(x) > 1){
-    mapply(is_integer, x)
-  }
+    if (length(x) > 1){
+        mapply(is_integer, x)
+    }
 }
