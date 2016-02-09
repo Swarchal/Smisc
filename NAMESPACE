@@ -2,3 +2,4 @@
 
 export(is_integer)
 export(list_to_dataframe)
+export(reverse_str)
