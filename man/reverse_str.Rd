@@ -15,4 +15,7 @@ string. reverse of s
 \description{
 As reverse("string") doesn't work, here's the function that does
 }
+\examples{
+reverse_str("string")
+}
 

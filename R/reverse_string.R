@@ -6,7 +6,7 @@
 #' @return string. reverse of s
 #' @export
 #' @examples
-#' "reverse_str("string")
+#' reverse_str("string")
 
 reverse_str <- function(s){
 	paste(rev(strsplit(s,'')[[1]]),collapse='')
