@@ -5,13 +5,13 @@
 #' in a row-wise fashion. Data frames have to have the same columns and column headers
 #'
 #' @param path string, path to folder containing .csv files
-#' @param col_name, string, name to call new column listing the origin for
+#' @param col_name string, name to call new column listing the origin for
 #'	each file.
 #' @param ... additional arguments to \code{read.csv}
 #'
 #' @param export
 
-rbind_all <- function(path, col_name = "origin",...){
+rbind_all <- function(path, col_name = "origin", ...){
     
     full_path <- list.files(path, pattern = "*.csv", full.names = TRUE)
     short_path <- list.files(path, pattern = "*.csv", no.. = TRUE)
